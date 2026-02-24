@@ -4,8 +4,7 @@ Objective: Validate system-level occupancy logic driven by PIR sensor input.
 
 ### Idle State (No Motion)
 
-![Idle State](images/![Motion-Before](https://github.com/user-attachments/assets/2d1f0e91-f545-40ca-b1af-cbe6c206e884)
-)
+![Idle State]
 
 - PIR digital input: LOW
 - Occupancy state: NO
@@ -17,7 +16,7 @@ When no motion is detected, the system maintains an "Unoccupied" state.
 
 ### Motion Detected
 
-![Motion Detected](images/motion-after.jpg)
+![Motion Detected]
 
 - PIR digital input: HIGH
 - Occupancy state: YES

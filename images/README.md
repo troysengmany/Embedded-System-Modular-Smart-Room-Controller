@@ -4,7 +4,8 @@ Objective: Validate system-level occupancy logic driven by PIR sensor input.
 
 ### Idle State (No Motion)
 
-![Idle State](images/motion-before.jpg)
+![Idle State](images/![Motion-Before](https://github.com/user-attachments/assets/2d1f0e91-f545-40ca-b1af-cbe6c206e884)
+)
 
 - PIR digital input: LOW
 - Occupancy state: NO

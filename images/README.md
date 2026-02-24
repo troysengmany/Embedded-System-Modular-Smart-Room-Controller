@@ -1,17 +1,25 @@
-## Motion Sensor Validation
+## Motion Module – Occupancy State Detection
 
-### Test Condition
-Objective: Verify PIR digital output transitions when motion is introduced.
+Objective: Validate system-level occupancy logic driven by PIR sensor input.
 
-### Baseline (No Motion Detected)
+### Idle State (No Motion)
 
-![Before Motion]
+![Idle State](images/motion-before.jpg)
 
-In the idle state, the PIR output remains LOW. The system does not trigger buzzer or occupancy state changes.
+- PIR digital input: LOW
+- Occupancy state: NO
+- System status: Unoccupied
 
-### After Motion Introduced
+When no motion is detected, the system maintains an "Unoccupied" state.
 
-![After Motion]
+---
 
-Upon introducing motion within sensor range, the PIR output transitions to HIGH.  
-Edge detection logic captures the LOW→HIGH transition and triggers a single buzzer event while updating occupancy state.
+### Motion Detected
+
+![Motion Detected](images/motion-after.jpg)
+
+- PIR digital input: HIGH
+- Occupancy state: YES
+- System status: Occupied
+
+When motion is detected, the system updates the occupancy state variable and transitions to "Occupied."

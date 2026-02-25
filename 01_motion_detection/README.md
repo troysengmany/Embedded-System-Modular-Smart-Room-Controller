@@ -1,25 +1,57 @@
-## Motion Module – Occupancy State Detection
+# Module 01 - Motion Detection (Occupancy State)
 
-Objective: Validate system-level occupancy logic driven by PIR sensor input.
-
-### Idle State (No Motion)
-
-![Idle State]
-
-- PIR digital input: LOW
-- Occupancy state: NO
-- System status: Unoccupied
-
-When no motion is detected, the system maintains an "Unoccupied" state.
+## Objective
+Validate PIR-based occupancy detection using stable, non-blocking timing logic before integrating additional sensors or outputs.
 
 ---
 
-### Motion Detected
+## Hardware
+- Arduino Mega
+- HC-SR501 PIR motion sensor
 
-![Motion Detected]
+---
 
-- PIR digital input: HIGH
-- Occupancy state: YES
-- System status: Occupied
+## Inputs / Outputs
 
-When motion is detected, the system updates the occupancy state variable and transitions to "Occupied."
+### Input
+- PIR (digital): HIGH when motion is detected, LOW otherwise
+
+### Output
+- Serial Monitor debug output
+
+---
+
+## System Behavior
+1. When PIR reads HIGH:
+   - `occupied = true`
+   - Last motion timestamp is updated
+
+2. If no motion occurs for `holdTime`:
+   - `occupied = false`
+
+3. Serial output prints occupancy state at fixed intervals to avoid spam.
+
+---
+
+## Core Logic Concepts
+- Digital signal handling
+- Boolean state retention
+- Non-blocking timing using `millis()`
+- Event-based logic (state transitions instead of constant toggling)
+
+---
+
+## Validation Images
+
+Idle State (No Motion):
+![](images/motion-before.jpg)
+
+Motion Detected:
+![](images/motion-after.jpg)
+
+---
+
+## What This Module Demonstrates
+- Stable occupancy detection
+- Proper timing logic without delay()
+- Foundation for multi-sensor system integration

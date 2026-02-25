@@ -47,7 +47,7 @@ Idle State (No Motion):
 ![](images/motion-before.jpg)
 
 Motion Detected:
-![](images/motion-after.jpg)
+![](images/motion-after.jpeg)
 
 ---
 

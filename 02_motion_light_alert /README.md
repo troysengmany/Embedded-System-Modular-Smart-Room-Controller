@@ -52,14 +52,15 @@ Record your observed values here:
 
 ---
 
-## Validation Photos
+## Video Demo
 
-| Bright + Motion (buzzer only) | Dark + Motion (buzzer + LED) |
-|---|---|
-| ![](images/bright-motion.jpg) | ![](images/dark-motion.jpg) |
+## Demo Videos
 
-(Optional) Idle / No motion:
-![](images/idle.jpg)
+Bright Room – Motion Trigger (Buzzer Only):
+[Watch Demo] [](https://youtu.be/4qPXHNmCPmI)
+
+Dark Room – Motion Trigger (Buzzer + LED):
+[Watch Demo] [](https://youtu.be/V-1aLgu4Uw4)
 
 ---
 

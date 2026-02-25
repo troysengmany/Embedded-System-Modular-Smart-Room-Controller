@@ -1,0 +1,42 @@
+const int PIR = 2;
+
+bool occupied = false;
+unsigned long lastMotionTime = 0;
+
+const unsigned long holdTime = 2000;   // 10 seconds
+
+unsigned long lastPrintTime = 0;        // controls printing interval
+const unsigned long printInterval = 1000;  // print every 500ms
+
+void setup() {
+  pinMode(PIR, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  unsigned long now = millis();
+
+  int motion = digitalRead(PIR);
+
+  if (motion == HIGH) {
+    occupied = true;
+    lastMotionTime = now;
+  }
+
+  if (occupied && (now - lastMotionTime >= holdTime)) {
+    occupied = false;
+  }
+
+  // Print only every 500ms
+  if (now - lastPrintTime >= printInterval) {
+    lastPrintTime = now;
+
+    Serial.print("Occupied: ");
+    if (occupied) {
+      Serial.println("YES");
+    } else {
+      Serial.println("NO");
+    }
+  }
+}

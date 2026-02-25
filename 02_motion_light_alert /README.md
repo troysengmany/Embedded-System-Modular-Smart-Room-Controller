@@ -57,10 +57,10 @@ Record your observed values here:
 ## Demo Videos
 
 Bright Room – Motion Trigger (Buzzer Only):
-[Watch Demo] [](https://youtu.be/4qPXHNmCPmI)
+[Watch Demo] [https://youtu.be/V-1aLgu4Uw4](https://youtu.be/V-1aLgu4Uw4)
 
 Dark Room – Motion Trigger (Buzzer + LED):
-[Watch Demo] [](https://youtu.be/V-1aLgu4Uw4)
+[Watch Demo] [(https://youtu.be/V-1aLgu4Uw4)](https://youtu.be/4qPXHNmCPmI)
 
 ---
 
